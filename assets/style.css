@@ -1,0 +1,324 @@
+/* reset all styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* style for the body */
+body {
+    padding-top: 1em;
+}
+
+/* style for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* style for the h1 tag */
+h1 {
+    font-size: 36px;
+    text-align: left;
+    margin: 20px 0;
+
+}
+
+/* style for the h2 tag */
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* style for the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 2em 2em 0.5em;
+}
+
+p {
+    font-size: 22px;
+}
+
+/* style for the quiz options list */
+ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+/* style for the quiz options list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* style for the dropdown menus */
+select {
+    padding: 5px;
+}
+
+/* more space after label */
+label {
+    margin-bottom: 10px;
+}
+
+/* style for the quiz option buttons */
+button.btn-lnk {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+}
+
+/* style for the quiz option buttons on hover */
+button.btn-lnk:hover {
+    background-color: #555;
+}
+
+/* style for the admin page link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 150px;
+}
+
+textarea {
+    resize: none;
+    font-size: 13px;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+
+}
+
+input[type=number] {
+    width: 55px;
+}
+
+/* style for the admin page link on hover */
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.delete-answer,
+.delete-question,
+.add-answer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-self: center;
+}
+
+.add-answer {
+    margin-top: 1em;
+}
+
+/* style for the quiz question */
+.question {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* style for the quiz options */
+.options {
+    list-style: none;
+    margin: 20px 0;
+}
+
+/* style for the quiz option labels */
+.option-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* style for the quiz option checkboxes */
+.option-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* style for the quiz option text */
+.option-text {
+    margin-left: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: fit-content;
+    min-width: 300px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.5em;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+/* style for the quiz submit button */
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0.5em 0;
+    width: 187px;
+}
+
+.smaller-submit-btn {
+    width: fit-content;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+/* style for the quiz submit button on hover */
+.submit-btn:hover {
+    background-color: #555;
+}
+
+/* box for content */
+.content-box {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* style for the admin page link in the header */
+header .header-link {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    border: 1px solid #333;
+}
+
+/* style for the admin page link in the header on hover */
+header .header-link:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* inputfield with label */
+.form-userinput {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 0.3em 0.3em 0.5em;
+    align-items: baseline;
+}
+
+.ans-correct,
+.ans-incorrect,
+.ans-neutral {
+    font-size: 16px;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.ans-correct {
+    color: green;
+}
+
+.ans-incorrect {
+    color: darkred;
+}
+
+/* pass pointer events to parent */
+.svg-btn {
+    pointer-events: none;
+}
+
+.description-question {
+    color: #6c6c6c;
+    font-size: smaller;
+    margin-bottom: 2em;
+}
+
+.question-block {
+    margin-bottom: 1em;
+}
+
+.question-separator {
+    border: 1px solid #ccc;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.smaller-gap {
+    justify-content: left;
+}
+
+.more-margin-top {
+    margin-top: 1em;
+}
+
+.double-margin-top {
+    margin-top: 2.5em;
+}
+
+.more-margin-bottom {
+    margin-bottom: 1em;
+}
+
+.double-margin-bottom {
+    margin-bottom: 2em;
+}
+
+.input-fill-avail {
+    flex-grow: 1;
+}
+
+.fill-avail-width {
+    width: 100%;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.smaller-font {
+    font-size: 18px;
+}
