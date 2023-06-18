@@ -18,7 +18,7 @@ Legen Sie alle Dateien und Ordner des Git-Repositories, mit Ausnahme von `db_fil
 -   Hierarchische Kategorien mit unbegrenzten Unterkategorien
 -   Blättern durch die Fragen in Seitenansicht (einschließlich Speicherung der Antworten)
 -   Detaillierte Auswertung der Fragen mit Punktzahl am Ende
--   Verwendung von Sitzungen (Sessions), um das Quiz jederzeit unterbrechen und fortsetzen zu können
+-   Verwendung von Sessions, um das Quiz jederzeit unterbrechen und fortsetzen zu können
  - Admin-Page
 	 - Kategorien anlegen / verändern
 	 - Quizzes anlegen / verändern
